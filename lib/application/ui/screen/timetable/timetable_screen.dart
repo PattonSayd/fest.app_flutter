@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fest/application/ui/screen/timetable/widgets/body/timetable_tabs/timetable_tabs_widget.dart';
+import 'package:flutter_fest/application/ui/screen/timetable/widgets/tabs/timetable_tabs_widget.dart';
 
 import '../../../../resources/resources.dart';
 part 'widgets/header/logo_widget.dart';

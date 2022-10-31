@@ -5,6 +5,11 @@ class _BookmarksWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return IconButton(
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      onPressed: () {},
+      icon: Image.asset(AppAssets.bookmark),
+    );
   }
 }

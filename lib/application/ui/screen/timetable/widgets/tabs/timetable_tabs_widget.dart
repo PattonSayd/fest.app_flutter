@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../timetable_session/session_widget.dart';
+import 'package:flutter_fest/application/ui/screen/timetable/widgets/tabs/session/session_widget.dart';
 
 part 'widgets/single_session_widget.dart';
 part 'widgets/multi_session_widget.dart';
