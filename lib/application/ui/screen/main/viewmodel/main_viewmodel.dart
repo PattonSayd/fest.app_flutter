@@ -1,6 +1,6 @@
-part of '../main_tabs_screen.dart';
+import 'package:flutter/material.dart';
 
-class MaintabsViewModel extends ChangeNotifier {
+class MainViewModel extends ChangeNotifier {
   int _currentIndex = 0;
 
   int get getCurrentIndex => _currentIndex;

@@ -1,4 +1,4 @@
-part of '../main_tabs_screen.dart';
+part of '../main_screen.dart';
 
 class _BottomNavBarItemFactory {
   final String icon;

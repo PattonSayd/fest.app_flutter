@@ -1,4 +1,4 @@
-part of '../main_tabs_screen.dart';
+part of '../main_screen.dart';
 
 class _BottomNavBarWidget extends StatelessWidget {
   const _BottomNavBarWidget({
@@ -7,9 +7,9 @@ class _BottomNavBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final model = context.read<MaintabsViewModel>();
+    final model = context.read<MainViewModel>();
     final currentIndex =
-        context.select((MaintabsViewModel vm) => vm.getCurrentIndex);
+        context.select((MainViewModel vm) => vm.getCurrentIndex);
     final theme = Theme.of(context).bottomNavigationBarTheme;
 
     final items = [

@@ -1,4 +1,4 @@
-part of '../timetable_screen.dart';
+part of '../../timetable_screen.dart';
 
 class _LogoWidget extends StatelessWidget {
   const _LogoWidget({
@@ -9,17 +9,22 @@ class _LogoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: SizedBox(
-        height: 244,
+        height: 204,
         child: Stack(
           children: [
             Positioned(
+              left: 0,
+              top: 0,
+              child: Image.asset(AppAssets.sheduleBg),
+            ),
+            Positioned(
               left: 20,
-              top: 40,
+              top: 84,
               child: Image.asset(AppAssets.sheduleFfLogo),
             ),
             Positioned(
               right: 20,
-              top: 20,
+              top: 65,
               child: Image.asset(AppAssets.sheduleSurfLogo),
             )
           ],
