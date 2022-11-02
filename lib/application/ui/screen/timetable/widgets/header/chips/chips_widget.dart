@@ -31,8 +31,8 @@ class _ChipsWidget extends StatelessWidget {
                       begin: Alignment(-begin, 0.0),
                       end: Alignment(end, 0.0),
                       colors: const [
-                        Color(0XFF00BD13),
-                        Color(0XFF170AF4),
+                        AppColors.green,
+                        AppColors.blue,
                       ],
                     )),
                 child: ElevatedButton(

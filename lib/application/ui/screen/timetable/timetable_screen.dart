@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fest/application/ui/themes/app_colors.dart';
 import 'package:flutter_fest/resources/resources.dart';
 
 import 'widgets/sections/timetable_tabs_widget.dart';

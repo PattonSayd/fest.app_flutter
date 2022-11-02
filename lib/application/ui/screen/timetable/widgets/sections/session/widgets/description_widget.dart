@@ -11,11 +11,8 @@ class _DescriptionWidget extends StatelessWidget {
       padding: const EdgeInsets.only(right: 12.0),
       child: Text(
         config.sessionTitle,
-        style: TextStyle(
+        style: AppTextStyle.steinbeckNormalText.copyWith(
           color: config._style.sessionTitleColor,
-          fontSize: 18,
-          fontFamily: AppFonts.steinbeck,
-          height: 1.222,
         ),
       ),
     );

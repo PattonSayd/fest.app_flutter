@@ -13,13 +13,13 @@ class _BodyWidget extends StatelessWidget {
         Center(
           child: Text(
             index.toString(),
-            style: const TextStyle(color: Colors.white),
+            style: const TextStyle(color: AppColors.white),
           ),
         ),
         Center(
           child: Text(
             index.toString(),
-            style: const TextStyle(color: Colors.white),
+            style: const TextStyle(color: AppColors.white),
           ),
         ),
       ],

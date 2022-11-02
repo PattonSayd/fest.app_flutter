@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fest/application/ui/screen/main/viewmodel/main_viewmodel.dart';
+import 'package:flutter_fest/application/ui/themes/app_colors.dart';
 import 'package:flutter_fest/resources/resources.dart';
 import 'package:provider/provider.dart';
 

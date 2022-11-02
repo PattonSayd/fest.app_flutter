@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fest/application/ui/screen/timetable/widgets/sections/timetable_tabs_widget.dart';
-import 'package:flutter_fest/resources/app_fonts.dart';
+import 'package:flutter_fest/application/ui/themes/app_colors.dart';
+import 'package:flutter_fest/application/ui/themes/app_text_style.dart';
 part 'widgets/divider.dart';
 part 'config/time_config.dart';
 
@@ -13,12 +14,6 @@ class TimeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const textStyle = TextStyle(
-      fontSize: 12,
-      fontFamily: AppFonts.basisGrotesquePro,
-      fontWeight: FontWeight.w500,
-      height: 1.33,
-    );
     return SizedBox(
       width: 48,
       child: Row(
@@ -28,18 +23,20 @@ class TimeWidget extends StatelessWidget {
             children: [
               Text(
                 config.startTime,
-                style: textStyle.copyWith(color: config._style.startColor),
+                style: AppTextStyle.bookText
+                    .copyWith(color: config._style.startColor),
                 maxLines: 1,
               ),
               const Spacer(),
               Text(
                 config.endTime,
-                style: textStyle.copyWith(color: config._style.endColor),
+                style: AppTextStyle.bookText
+                    .copyWith(color: config._style.endColor),
                 maxLines: 1,
               )
             ],
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 9),
           Column(
             children: [
               Expanded(

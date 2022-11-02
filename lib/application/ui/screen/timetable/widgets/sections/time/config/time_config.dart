@@ -23,18 +23,18 @@ class TimeConfig {
   });
 
   static const oncomingStyle = _TimeStyle(
-    startColor: Color(0xB7FFFFFF),
-    endColor: Color(0xB7FFFFFF),
+    startColor: AppColors.white72,
+    endColor: AppColors.white72,
   );
 
   static const pastStyle = _TimeStyle(
-    startColor: Color(0xB752525E),
-    endColor: Color(0xB752525E),
+    startColor: AppColors.darkText72,
+    endColor: AppColors.darkText72,
   );
 
   static const currentStyle = _TimeStyle(
-    startColor: Color(0xB752525E),
-    endColor: Color(0xB700BD13),
+    startColor: AppColors.darkText72,
+    endColor: AppColors.green72,
   );
 }
 

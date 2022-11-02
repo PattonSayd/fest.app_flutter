@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fest/application/ui/screen/timetable/widgets/sections/timetable_tabs_widget.dart';
-import 'package:flutter_fest/resources/app_fonts.dart';
+import 'package:flutter_fest/application/ui/themes/app_colors.dart';
+import 'package:flutter_fest/application/ui/themes/app_text_style.dart';
 import 'package:flutter_fest/resources/resources.dart';
 
 part 'widgets/speaker_widget.dart';

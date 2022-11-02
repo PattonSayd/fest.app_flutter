@@ -54,20 +54,20 @@ class SessionConfig {
       bookmarks ? isBookmarksStyle : isNotBookmarksStyle;
 
   static const oncomingStyle = _SessionStyle(
-    widgetBackground: Color(0xFF101115),
-    speakerNameColor: Color(0xFF52525E),
-    sessionTitleColor: Colors.white,
+    widgetBackground: AppColors.darkSecondary,
+    speakerNameColor: AppColors.darkText,
+    sessionTitleColor: AppColors.white,
   );
 
   static const pastStyle = _SessionStyle(
-    widgetBackground: Colors.transparent,
-    speakerNameColor: Color(0x7A52525E),
-    sessionTitleColor: Color(0xFF52525E),
+    widgetBackground: AppColors.transparent,
+    speakerNameColor: AppColors.darkText48,
+    sessionTitleColor: AppColors.darkText,
   );
 
   static const isBookmarksStyle = _SessionBookmarksStyle(
-    bookmarksButtonColor: Color(0xFF00BD13),
-    widgetBackgroundGradient: Color(0xFF00BD13),
+    bookmarksButtonColor: AppColors.green,
+    widgetBackgroundGradient: AppColors.green,
     bookmarksButtonIcon: AppAssets.bookmarkFull,
   );
 

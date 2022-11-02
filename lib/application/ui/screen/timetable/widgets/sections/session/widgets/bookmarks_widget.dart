@@ -8,8 +8,8 @@ class _BookmarksWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      splashColor: Colors.transparent,
-      highlightColor: Colors.transparent,
+      splashColor: AppColors.transparent,
+      highlightColor: AppColors.transparent,
       onPressed: () {},
       icon: Image.asset(
         config._bookmarksStyle.bookmarksButtonIcon,

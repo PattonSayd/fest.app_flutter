@@ -22,13 +22,8 @@ class _SpeakerWidget extends StatelessWidget {
           Expanded(
             child: Text(
               config.speakerName,
-              style: TextStyle(
-                color: config._style.speakerNameColor,
-                fontSize: 14,
-                fontFamily: AppFonts.basisGrotesquePro,
-                fontWeight: FontWeight.w500,
-                height: 1.4285,
-              ),
+              style: AppTextStyle.bookText
+                  .copyWith(color: config._style.speakerNameColor),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               softWrap: false,
