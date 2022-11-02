@@ -1,7 +1,7 @@
 part of '../timetable_tabs_widget.dart';
 
-class _MultiSessionWidget extends TimetableTabsWidget {
-  const _MultiSessionWidget({Key? key}) : super(key: key);
+class _MultiTabsWidget extends TimetableTabsWidget {
+  const _MultiTabsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

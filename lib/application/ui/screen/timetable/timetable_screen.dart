@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fest/application/ui/screen/timetable/widgets/tabs/timetable_tabs_widget.dart';
+import 'package:flutter_fest/resources/resources.dart';
 
-import '../../../../resources/resources.dart';
+import 'widgets/sections/timetable_tabs_widget.dart';
+
 part 'widgets/header/logo_widget.dart';
 part 'widgets/header/chips/chips_delegate.dart';
 part 'widgets/header/chips/chips_widget.dart';
@@ -24,13 +25,21 @@ class TimetableScreen extends StatelessWidget {
             delegate: _ChipsDelegat(topInset: safeAreaTop),
           ),
           SliverList(
-            delegate: SliverChildListDelegate(
-              [
-                TimetableTabsWidget.single(),
-                TimetableTabsWidget.single(),
-                TimetableTabsWidget.single(),
-              ],
-            ),
+            delegate: SliverChildBuilderDelegate(((context, index) {
+              return Padding(
+                padding: const EdgeInsets.only(top: 16.0, left: 20, right: 20),
+                child: TimetableTabsWidget.single(),
+              );
+            })
+
+                // TimetableTabsWidget.single(),
+                // TimetableTabsWidget.single(),
+                // TimetableTabsWidget.single(),
+                // TimetableTabsWidget.single(),
+                // TimetableTabsWidget.single(),
+                // TimetableTabsWidget.single(),
+
+                ),
           ),
         ],
       ),

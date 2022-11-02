@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fest/application/ui/screen/timetable/widgets/sections/timetable_tabs_widget.dart';
 import 'package:flutter_fest/resources/app_fonts.dart';
 import 'package:flutter_fest/resources/resources.dart';
 
@@ -20,7 +21,6 @@ class SessionWidget extends StatelessWidget {
           borderRadius: const BorderRadius.all(Radius.circular(20)),
         ),
         padding: const EdgeInsets.only(left: 16, top: 4, right: 4, bottom: 16),
-        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

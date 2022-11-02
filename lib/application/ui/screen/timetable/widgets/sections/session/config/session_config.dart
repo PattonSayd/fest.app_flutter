@@ -1,7 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 part of '../session_widget.dart';
-
-enum SessionStatus { oncoming, current, past }
 
 class _SessionStyle {
   final Color widgetBackground;
