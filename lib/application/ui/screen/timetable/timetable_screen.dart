@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fest/application/ui/screen/timetable/widgets/sections/break/break_widget.dart';
 import 'package:flutter_fest/application/ui/themes/app_colors.dart';
 import 'package:flutter_fest/resources/resources.dart';
 
@@ -26,21 +27,17 @@ class TimetableScreen extends StatelessWidget {
             delegate: _ChipsDelegat(topInset: safeAreaTop),
           ),
           SliverList(
-            delegate: SliverChildBuilderDelegate(((context, index) {
-              return Padding(
-                padding: const EdgeInsets.only(top: 16.0, left: 20, right: 20),
-                child: TimetableTabsWidget.single(),
-              );
-            })
-
-                // TimetableTabsWidget.single(),
-                // TimetableTabsWidget.single(),
-                // TimetableTabsWidget.single(),
-                // TimetableTabsWidget.single(),
-                // TimetableTabsWidget.single(),
-                // TimetableTabsWidget.single(),
-
-                ),
+            delegate: SliverChildBuilderDelegate(
+              ((context, index) {
+                if (index == 3) return const BreakWidget();
+                return Padding(
+                  padding:
+                      const EdgeInsets.only(top: 16.0, left: 20, right: 20),
+                  child: TimetableTabsWidget.single(),
+                );
+              }),
+              childCount: 10,
+            ),
           ),
         ],
       ),
